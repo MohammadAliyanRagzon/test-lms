@@ -29,7 +29,7 @@ const RequestsTestimonials = () => {
                   src={render?.image}
                   alt="student"
                 />
-                <h1 className="!font-family-barlow text-base font-semibold text-secondary">
+                <h1 className="!font-family-barlow text-sm font-semibold text-secondary">
                   {value}
                 </h1>
               </div>
