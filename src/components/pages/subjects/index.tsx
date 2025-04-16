@@ -11,7 +11,7 @@ const AllSubjects = () => {
   return (
     <div className="border border-primary-border px-5 py-7 rounded-primary flex flex-col gap-7 w-auto">
       <div className="flex items-center gap-2">
-        <img src="/images/students/enrolled-students.svg" className="h-6 w-6" />
+        <img src="/images/subjects/book.svg" className="h-6 w-6" />
         <h1 className="text-lg font-bold !font-family-barlow">All Subjects</h1>
       </div>
       <div className="grid grid-cols-2 gap-5 items-center">

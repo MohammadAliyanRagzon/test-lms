@@ -18,9 +18,19 @@ const PaymentInfoTable = () => {
           { title: "Instructor", dataIndex: "instructor" },
           { title: "Amount", dataIndex: "amount" },
           { title: "Status", dataIndex: "status" },
-          { title: "", dataIndex: "action" },
         ]}
-        data={[]}
+        data={[
+          { id: "01", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Approved" },
+          { id: "02", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Approved" },
+          { id: "03", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Pending" },
+          { id: "04", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Approved" },
+          { id: "05", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Approved" },
+          { id: "06", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Reversed" },
+          { id: "07", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Approved" },
+          { id: "08", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Approved" },
+          { id: "09", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Approved" },
+          { id: "10", date: "May 10, 2024", time: "7:30:00 PM", instructor: "Mr Asad Sheikh", amount: "Rs. 5000", status: "Approved" },
+        ]}
       />
     </div>
   );

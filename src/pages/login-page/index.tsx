@@ -89,7 +89,7 @@ export default function Login() {
               <Button
                 type="primary"
                 htmlType="submit"
-                className="w-full !bg-white !text-black hover:bg-gray-100 border-none !h-10 md:!h-14 !font-semibold !text-xl !font-family-barlow"
+                className="w-full  !bg-white !text-black hover:bg-gray-100 border-none !h-10 md:!h-14 !font-semibold !text-xl !font-family-barlow"
               >
                 Login
               </Button>
