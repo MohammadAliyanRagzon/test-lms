@@ -14,7 +14,7 @@ const FAQStudent = () => {
   return (
     <div className="border border-primary-border px-5 py-7 rounded-primary flex flex-col gap-7 w-auto">
       <div className="flex items-center gap-2">
-        <img src="/images/students/enrolled-students.svg" className="h-6 w-6" />
+        <img src="/images/faqs/faqs.svg" className="h-6 w-6" />
         <h1 className="text-lg font-bold !font-family-barlow">FAQ's</h1>
       </div>
 
