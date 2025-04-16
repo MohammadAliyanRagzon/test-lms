@@ -20,7 +20,7 @@ const PaymentDetails = () => {
           navigate(`${ROUTES.PAYMENT_INFO}`)
         }
       >
-        <BiChevronLeft className="text-2xl" />
+        <BiChevronLeft className="text-3xl" />
         <div>Payment Info</div>
       </h1>
       <div className="flex flex-col gap-6 md:gap-4">
