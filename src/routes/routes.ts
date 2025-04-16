@@ -8,6 +8,8 @@ export const ROUTES = {
   PAYMENT_INFO: "/payment-info",
   BLOGS: "/blogs",
   MANAGE_BLOG: "/manage-blog",
+  MANAGE_STUDENT: "/manage-student",
+  MANAGE_TUTOR: "/manage-tutor",
   FAQS: "/faqs",
   TESTIMONIALS: "/testimonials",
   CONTACT_US: "/contact-us",

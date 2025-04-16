@@ -6,9 +6,13 @@ import { Modal, Popover } from "antd";
 import Button from "../../../common/button";
 import { HiDotsVertical } from "react-icons/hi";
 import Chip from "../../../common/chip";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../../../routes/routes";
 
 const EnrolledStudent = () => {
   const [showStudentProfile, setShowStudentProfile] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <div className="border border-primary-border px-5 py-7 rounded-primary flex flex-col gap-7 w-auto">
       <div className="flex items-center gap-2">
@@ -92,7 +96,9 @@ const EnrolledStudent = () => {
                         Reject
                       </p>
                       <p
-                        onClick={() => setShowStudentProfile(true)}
+                        onClick={() =>
+                          navigate(`${ROUTES.STUDENTS}${ROUTES.MANAGE_STUDENT}`)
+                        }
                         className="text-gray-400 hover:text-gray-600 transition-all py-2.5 pl-6 text-[16px] cursor-pointer"
                       >
                         View Profile

@@ -14,6 +14,7 @@ import Blogs from "../pages/blogs";
 import PaymentInfo from "../pages/payment-info";
 import PaymentDetails from "../pages/payment-info/payment-details";
 import ManageBlog from "../pages/blogs/manage-blog";
+import ManageStudent from "../pages/students/view-profile";
 
 export const router = createBrowserRouter([
   {
@@ -55,6 +56,14 @@ export const router = createBrowserRouter([
     ],
   },
   {
+    path: `${ROUTES.STUDENTS}${ROUTES.MANAGE_STUDENT}`,
+    element: (
+      <Layout>
+        <ManageStudent />
+      </Layout>
+    ),
+  },
+  {
     path: ROUTES.PAYMENT_INFO,
     element: <Outlet />,
     children: [
@@ -62,7 +71,6 @@ export const router = createBrowserRouter([
         path: ROUTES.PAYMENT_INFO,
         element: (
           <Layout>
-            {/* <PaymentDetails /> */}
             <PaymentInfo />
           </Layout>
         ),
@@ -90,6 +98,14 @@ export const router = createBrowserRouter([
         ),
       },
     ],
+  },
+  {
+    path: `${ROUTES.TUTORS}${ROUTES.MANAGE_TUTOR}`,
+    element: (
+      <Layout>
+        <ManageBlog />
+      </Layout>
+    ),
   },
   {
     path: ROUTES.SUBJECTS,
@@ -162,7 +178,7 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: `${ROUTES.BLOGS}/${ROUTES.MANAGE_BLOG}`,
+    path: `${ROUTES.BLOGS}${ROUTES.MANAGE_BLOG}`,
     element: (
       <Layout>
         <ManageBlog />
