@@ -13,6 +13,7 @@ import FAQ from "../pages/faq";
 import Blogs from "../pages/blogs";
 import PaymentInfo from "../pages/payment-info";
 import PaymentDetails from "../pages/payment-info/payment-details";
+import ManageBlog from "../pages/blogs/manage-blog";
 
 export const router = createBrowserRouter([
   {
@@ -159,6 +160,14 @@ export const router = createBrowserRouter([
         ),
       },
     ],
+  },
+  {
+    path: `${ROUTES.BLOGS}/${ROUTES.MANAGE_BLOG}`,
+    element: (
+      <Layout>
+        <ManageBlog />
+      </Layout>
+    ),
   },
   {
     path: ROUTES.TESTIMONIALS,
