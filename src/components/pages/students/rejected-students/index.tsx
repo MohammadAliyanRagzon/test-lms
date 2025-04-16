@@ -52,7 +52,7 @@ const RejectedStudent = () => {
             dataIndex: "subjectsCourses",
             align: "center",
             render: (value) => (
-              <div className="flex flex-wrap max-w-2xs justify-center items-center ">
+              <div className="flex flex-wrap max-w-2xs justify-center items-center  gap-2">
                 {value.split(",").map((subject: string, index: number) => (
                   <Chip key={index}>{subject.trim()}</Chip>
                 ))}
@@ -89,8 +89,7 @@ const RejectedStudent = () => {
             image: "https://picsum.photos/200/300",
             name: "Dr. Sarah Johnson",
             qualification: "PhD in Physics",
-            subjectsCourses:
-              "Classical Mechanics, Quantum Physics, Thermodynamics",
+            subjectsCourses: "Mechanics, Quantum Physics, Thermodynamics",
             enrolledDate: "2023-09-15",
           },
           {

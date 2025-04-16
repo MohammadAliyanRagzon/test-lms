@@ -3,7 +3,7 @@ import CustomTable from "../../common/table";
 
 const PaymentInfoTable = () => {
   return (
-    <div className="border border-primary-border px-5 py-7 rounded-primary flex flex-col gap-6 w-full">
+    <div className="border border-primary-border bg-white px-5 py-7 rounded-primary flex flex-col gap-6 w-full">
       <div className="flex items-center gap-2">
         <PaymentInfoTableIcon className="h-6 w-6" />
         <h1 className="text-lg font-bold !font-family-barlow">

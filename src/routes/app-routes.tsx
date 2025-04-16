@@ -15,6 +15,7 @@ import PaymentInfo from "../pages/payment-info";
 import PaymentDetails from "../pages/payment-info/payment-details";
 import ManageBlog from "../pages/blogs/manage-blog";
 import ManageStudent from "../pages/students/view-profile";
+import ManageTutor from "../pages/tutors/view-profile";
 
 export const router = createBrowserRouter([
   {
@@ -103,7 +104,7 @@ export const router = createBrowserRouter([
     path: `${ROUTES.TUTORS}${ROUTES.MANAGE_TUTOR}`,
     element: (
       <Layout>
-        <ManageBlog />
+        <ManageTutor />
       </Layout>
     ),
   },

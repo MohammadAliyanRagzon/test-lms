@@ -14,7 +14,7 @@ const Blogs = () => {
         className="w-fit "
         variant="secondary"
         onClick={() =>
-          navigate(`${ROUTES.BLOGS}/${ROUTES.MANAGE_BLOG}`)
+          navigate(`${ROUTES.BLOGS}${ROUTES.MANAGE_BLOG}`)
         }
       >
         Create New Post

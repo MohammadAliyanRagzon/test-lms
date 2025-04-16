@@ -1,6 +1,9 @@
 import { BiChevronLeft } from "react-icons/bi";
 import { ROUTES } from "../../../routes/routes";
 import { useNavigate } from "react-router-dom";
+import PaymentInfoTable from "../../../components/pages/payment-info/payment-info-table";
+import ProfileCard from "../../../components/pages/tutors/manage-tutor/view-profile-card";
+
 const ManageTutor = () => {
   const navigate = useNavigate();
 
@@ -14,7 +17,13 @@ const ManageTutor = () => {
         <div>Manage Tutors</div>
       </h1>
       <div className="flex flex-col gap-6 md:gap-4">
-        <div className="h-64 w-full border-2 border-dotted border-gray-300 bg-white rounded-xl flex flex-col gap-5 py-10  justify-center items-center  "></div>
+        <h1 className="text-2xl !font-family-barlow font-bold text-secondary">
+          Tutor History
+        </h1>
+      </div>
+      <div className="flex flex-col gap-5">
+        <ProfileCard />
+        <PaymentInfoTable />
       </div>
     </div>
   );

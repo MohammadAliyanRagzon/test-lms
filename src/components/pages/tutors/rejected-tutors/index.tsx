@@ -10,8 +10,6 @@ import Chip from "../../../common/chip";
 const RejectedTutor = () => {
   const [showStudentProfile, setShowStudentProfile] = useState(false);
 
-
-
   return (
     <div className="border border-primary-border px-5 py-7 rounded-primary flex flex-col gap-7 w-auto">
       <div className="flex items-center gap-2">
@@ -55,7 +53,7 @@ const RejectedTutor = () => {
             dataIndex: "subjectsCourses",
             align: "center",
             render: (value) => (
-              <div className="flex flex-wrap max-w-2xs justify-center items-center ">
+              <div className="flex flex-wrap max-w-2xs justify-center items-center  gap-2 ">
                 {value.split(",").map((subject: string, index: number) => (
                   <Chip key={index}>{subject.trim()}</Chip>
                 ))}
@@ -92,8 +90,7 @@ const RejectedTutor = () => {
             image: "https://picsum.photos/200/300",
             name: "Dr. Sarah Johnson",
             qualification: "PhD in Physics",
-            subjectsCourses:
-              "Classical Mechanics, Quantum Physics, Thermodynamics",
+            subjectsCourses: "Mechanics, Quantum Physics, Thermodynamics",
             enrolledDate: "2023-09-15",
           },
           {

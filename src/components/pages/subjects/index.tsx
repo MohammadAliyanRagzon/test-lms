@@ -14,7 +14,7 @@ const AllSubjects = () => {
         <img src="/images/subjects/book.svg" className="h-6 w-6" />
         <h1 className="text-lg font-bold !font-family-barlow">All Subjects</h1>
       </div>
-      <div className="grid grid-cols-2 gap-5 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
         <SubjectCard
           title="Mathematics"
           level="Matric"

@@ -13,7 +13,7 @@ const AdminTestimonials = () => {
   return (
     <div className="border border-primary-border px-5 py-7 rounded-primary flex flex-col gap-7 w-auto">
       <div className="flex items-center gap-2">
-        <img src="/images/testimonials/img1.svg" className="h-6 w-6" />
+        <img src="/images/testimonials/testimonials.svg" className="h-6 w-6" />
         <h1 className="text-lg font-bold !font-family-barlow">Testimonials</h1>
       </div>
 
@@ -23,7 +23,7 @@ const AdminTestimonials = () => {
             key: "name",
             title: "Name",
             dataIndex: "name",
-            className : "",
+            className: "",
             render: (value, render) => (
               <div className="flex items-center gap-1.5 no- ">
                 <img

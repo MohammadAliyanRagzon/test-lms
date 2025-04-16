@@ -6,7 +6,6 @@ import { RxDashboard } from "react-icons/rx";
 import {
   PiBookOpenTextLight,
   PiCreditCardLight,
-  PiDesktop,
   PiStudentLight,
 } from "react-icons/pi";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -14,9 +13,11 @@ import Logo from "../../assest/icons/logo";
 import Message from "../../assest/icons/message";
 import { ROUTES } from "../../routes/routes";
 import { SlGraduation } from "react-icons/sl";
-import { FiEdit, FiPhone } from "react-icons/fi";
 import { TbMessageStar } from "react-icons/tb";
 import { useSidebar } from "../../contexts/sidebar-context";
+import { IoIosDesktop } from "react-icons/io";
+import { LiaEdit } from "react-icons/lia";
+import { HiOutlinePhone } from "react-icons/hi";
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -50,7 +51,7 @@ const Sidebar = () => {
     },
     {
       key: ROUTES.COURSES,
-      icon: <PiDesktop />,
+      icon: <IoIosDesktop />,
       label: "Courses",
       path: ROUTES.COURSES,
     },
@@ -62,7 +63,7 @@ const Sidebar = () => {
     },
     {
       key: ROUTES.BLOGS,
-      icon: <FiEdit />,
+      icon: <LiaEdit />,
       label: "Blogs",
       path: ROUTES.BLOGS,
     },
@@ -80,7 +81,7 @@ const Sidebar = () => {
     },
     {
       key: ROUTES.CONTACT_US,
-      icon: <FiPhone />,
+      icon: <HiOutlinePhone />,
       label: "Contact Us",
       path: ROUTES.CONTACT_US,
     },
@@ -88,7 +89,9 @@ const Sidebar = () => {
 
   const activeKey =
     items.find((item) => item.path === pathname)?.key ||
-    (pathname.startsWith(ROUTES.LECTURE_DETAIL) ? ROUTES.LECTURES : "");
+    (pathname.startsWith(ROUTES.BLOGS) ? ROUTES.BLOGS : "") ||
+    (pathname.startsWith(ROUTES.TUTORS) ? ROUTES.TUTORS : "") ||
+    (pathname.startsWith(ROUTES.STUDENTS) ? ROUTES.STUDENTS : "");
 
   const handleCollapse = (collapsed: boolean) => {
     toggleSidebar(collapsed);

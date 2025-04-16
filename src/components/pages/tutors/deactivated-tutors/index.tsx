@@ -6,13 +6,17 @@ import { Modal, Popover } from "antd";
 import Button from "../../../common/button";
 import { HiDotsVertical } from "react-icons/hi";
 import Chip from "../../../common/chip";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../../../routes/routes";
 
 const DeactivatedTutors = () => {
   const [showStudentProfile, setShowStudentProfile] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <div className="border border-primary-border px-5 py-7 rounded-primary flex flex-col gap-7 w-auto">
       <div className="flex items-center gap-2">
-      <img src="/images/tutors/deactivated-tutors.svg" className="h-6 w-6" />
+        <img src="/images/tutors/deactivated-tutors.svg" className="h-6 w-6" />
         <h1 className="text-lg font-bold !font-family-barlow">
           Deactivated Tutors
         </h1>
@@ -52,7 +56,7 @@ const DeactivatedTutors = () => {
             dataIndex: "subjectsCourses",
             align: "center",
             render: (value) => (
-              <div className="flex flex-wrap max-w-2xs justify-center items-center ">
+              <div className="flex flex-wrap max-w-2xs justify-center items-center  gap-2 ">
                 {value.split(",").map((subject: string, index: number) => (
                   <Chip key={index}>{subject.trim()}</Chip>
                 ))}
@@ -92,7 +96,9 @@ const DeactivatedTutors = () => {
                         Reject
                       </p>
                       <p
-                        onClick={() => setShowStudentProfile(true)}
+                        onClick={() =>
+                          navigate(`${ROUTES.TUTORS}${ROUTES.MANAGE_TUTOR}`)
+                        }
                         className="text-gray-400 hover:text-gray-600 transition-all py-2.5 pl-6 text-[16px] cursor-pointer"
                       >
                         View Profile
@@ -121,8 +127,7 @@ const DeactivatedTutors = () => {
             image: "https://picsum.photos/200/300",
             name: "Dr. Sarah Johnson",
             qualification: "PhD in Physics",
-            subjectsCourses:
-              "Classical Mechanics, Quantum Physics, Thermodynamics",
+            subjectsCourses: "Mechanics, Quantum Physics, Thermodynamics",
             enrolledDate: "2023-09-15",
           },
           {

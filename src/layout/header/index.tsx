@@ -3,7 +3,7 @@ import { GoBell } from "react-icons/go";
 import { Dropdown, MenuProps, Modal } from "antd";
 import DropdownHeading from "./dropdown-heading";
 import { MdMenu } from "react-icons/md";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import NotificationModal from "./notification-modal";
 import styled from "@emotion/styled";
@@ -13,28 +13,12 @@ import { useSidebar } from "../../contexts/sidebar-context";
 
 const Header = () => {
   const { pathname } = useLocation();
-  const navigate = useNavigate();
   const { isCollapsed, toggleSidebar } = useSidebar();
 
   const [notificationModal1Open, setNotificationModal1Open] = useState(false);
   const [changePasswordModal, setChangePasswordModal] = useState(false);
 
   const items: MenuProps["items"] = [
-    {
-      label: <DropdownHeading title="Profile" className="text-secondary" />,
-      key: "0",
-      onClick: () => navigate(ROUTES.PROFILE),
-      className: pathname === ROUTES.PROFILE ? "bg-primary/20 text-white" : "",
-    },
-    {
-      label: (
-        <DropdownHeading title="Payment Method" className="text-secondary" />
-      ),
-      key: "2",
-      onClick: () => navigate(ROUTES.PAYMENT_METHOD),
-      className:
-        pathname === ROUTES.PAYMENT_METHOD ? "bg-primary/20 text-white" : "",
-    },
     {
       label: (
         <DropdownHeading title="Change Password" className="text-secondary" />
