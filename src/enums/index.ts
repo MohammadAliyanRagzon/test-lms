@@ -23,3 +23,8 @@ export enum FAQS {
   FAQSFORSTUDENTS = "FaqForStudents",
   FAQSFORTUTORS = "FaqForTutors",
 }
+
+export enum PAYMENTINFO {
+  STUDENTS = "Students",
+  TUTORS = "Tutors",
+}

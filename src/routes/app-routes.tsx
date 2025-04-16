@@ -4,7 +4,6 @@ import LoginPage from "../pages/login-page";
 import Layout from "../layout";
 import Dashboard from "../pages/dashboard";
 import Tutors from "../pages/tutors";
-import PaymentInfo from "../pages/payment-info";
 import Students from "../pages/students";
 import ContactUs from "../pages/contact-us";
 import Testimonials from "../pages/testimonials";
@@ -12,6 +11,8 @@ import Subjects from "../pages/subjects";
 import Courses from "../pages/courses";
 import FAQ from "../pages/faq";
 import Blogs from "../pages/blogs";
+import PaymentInfo from "../pages/payment-info";
+import PaymentDetails from "../pages/payment-info/payment-details";
 
 export const router = createBrowserRouter([
   {
@@ -60,11 +61,20 @@ export const router = createBrowserRouter([
         path: ROUTES.PAYMENT_INFO,
         element: (
           <Layout>
+            {/* <PaymentDetails /> */}
             <PaymentInfo />
           </Layout>
         ),
       },
     ],
+  },
+  {
+    path: `${ROUTES.PAYMENT_INFO}/:studentName`,
+    element: (
+      <Layout>
+        <PaymentDetails />
+      </Layout>
+    ),
   },
   {
     path: ROUTES.STUDENTS,
