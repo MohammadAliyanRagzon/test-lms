@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@theme {
+  --color-primary: #a435f0;
+  --color-secondary: #1f1d0d;
+  --color-primary-text: #8f8f8f;
+  --color-main-background: #fafafa;
+  --color-main-red: #ec1c24;
+  --color-main-green: #02d326;
+  --color-main-yellow: #ffd42d;
+  --color-primary-border: #e3e3e3;
+  --color-primary-table-header: #a435f015;
+  --color-primary-table-header-dark: #a435f030;
+  --font-family-barlow: "Barlow", sans-serif;
+  --radius-primary: 10px;
+}
+
+:root {
+  --primary: #a435f0;
+  --secondary: #1f1d0d;
+  --primary-text: #8f8f8f;
+  --main-background: #fafafa;
+  --main-red: #ec1c24;
+  --main-green: #02d326;
+  --main-yellow: #ffd42d;
+  --primary-border: #e3e3e3;
+  --primary-table-header: #a435f015;
+  --primary-table-header-dark: #a435f030;
+  --font-family-barlow: "Barlow", sans-serif !important;
+}
+
+.custom-profile-dropdown {
+  min-width: 170px !important;
+  border-radius: 10px;
+  box-shadow: -10px 10px 0px 0px var(--secondary);
+
+  .ant-dropdown-menu {
+    padding: 20px 0px 10px 0px;
+    border: 1px solid var(--secondary);
+
+    .ant-dropdown-menu-item {
+      padding: 10px 15px;
+      color: var(--secondary);
+    }
+
+    .ant-dropdown-menu-item-divider {
+      background-color: var(--secondary);
+    }
+  }
+}
+
+.ant-select-item-option-selected {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+.ant-picker-outlined:focus-within {
+  box-shadow: none !important;
+}
+
+.ant-picker-header,
+.ant-picker-dropdown .ant-picker-header-view,
+.ant-picker-dropdown .ant-picker-header > button,
+.ant-picker-dropdown .ant-picker-header-view > button {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.ant-picker-dropdown .ant-picker-header > button:hover,
+.ant-picker-dropdown .ant-picker-header-view > button:hover {
+  color: rgba(255, 255, 255, 0.664);
+}
+
+.ant-picker-dropdown .ant-picker-date-panel .ant-picker-body {
+  padding: 4px 10px;
+}
+
+.ant-picker-dropdown .ant-picker-content th,
+.ant-picker-cell-inner {
+  font-size: 11px;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: var(--primary) !important;
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view.ant-picker-cell-today
+  .ant-picker-cell-inner:before {
+  border: 1px solid var(--primary);
+}
+
+.ant-picker-now-btn {
+  color: var(--primary);
+}
+
+.ant-picker-now-btn:hover {
+  color: var(--primary);
+}
+
+.ant-picker-footer {
+  display: none;
+}
+
+.remove-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.message-scrollbar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.message-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--primary-border);
+  border-radius: 0px;
+}
+
+.message-scrollbar::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
+
+#login_email::placeholder,
+#login_password::placeholder {
+  color: white;
+}
+.ant-form-item-explain-error {
+  color: white !important;
+}
+
+.ant-input-suffix {
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.ant-popover-inner{
+  border: 2px solid black;
+}
